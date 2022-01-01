@@ -46,6 +46,11 @@
   cursor: pointer;
 }
 
+.card1 a:hover {
+  transform: scale(1.5, 1.5);
+  color: red;
+}
+
 .card2 {
   position: relative;
   width: 40%;
@@ -63,6 +68,10 @@
   color: black;
 }
 
+.card2 a:hover {
+  transform: scale(1.5, 1.5);
+}
+
 .card2 p {
   /* color: white; */
   margin: 4px;
@@ -72,6 +81,10 @@
 .card2 p a {
   color: white;
   text-decoration: none;
+}
+
+.card2 p:hover {
+  transform: scale(1.2, 1.2);
 }
 
 .menu {
@@ -125,6 +138,12 @@
   margin: 0px 2px;
 }
 
+.card4 button:hover {
+  transform: scale(1.1);
+  background: rgb(201, 164, 164);
+  box-shadow: 2px 4px 2px rgb(148, 145, 145);
+}
+
 .card4 button a {
   text-decoration: none;
   color: white;
@@ -163,13 +182,27 @@
   height: 190px;
   margin-right: 24px;
   background: white;
+  background-image: url("./images/IMG_20180911_162305_794.jpg") no-repeat center;
+  background-size: cover;
+  animation: changeImage 20s linear infinite;
 }
 
-.card5 .pic img {
-  width: 190px;
-  height: 190px;
-  /* margin: 2px; */
-  padding: 2px;
+@keyframes changeImage {
+  0% {
+    background-image: url("./images/IMG_20180911_162305_794.jpg");
+  }
+  25% {
+    background-image: url("./images/IMG_20181211_201631.jpg");
+  }
+  50% {
+    background-image: url("./images/FB_IMG_1543242721052.jpg");
+  }
+  75% {
+    background-image: url("./images/IMG_20181214_074936_70-2.jpg");
+  }
+  100% {
+    background-image: url("./images/IMG_20191105_124809.jpg");
+  }
 }
 
 .card5 .pic .circle {
@@ -197,7 +230,15 @@
 .content p {
   font-size: 1.1em;
   /* font-weight: bold; */
-  padding: 24px 0px;
+  padding-bottom: 12px;
+  padding-top: 5px;
+}
+
+.content hr {
+  height: 8px;
+  background-image: linear-gradient(90deg, red, transparent);
+  border: 0;
+  height: 1px;
 }
 
 .card6 {
@@ -228,13 +269,17 @@
   color: rgb(85, 83, 83);
 }
 
+.box1 i:hover {
+  transform: scale(1.5, 1.5);
+}
+
 .box1 h2 {
   color: rgb(53, 52, 52);
   padding-bottom: 4px;
 }
 
 .box1 p {
-  padding: 0px 15px;
+  padding: 5px 25px;
   color: rgb(53, 52, 52);
 }
 
@@ -337,19 +382,6 @@
   align-items: center;
 }
 
-.card12 p {
-  padding: 5px 54px;
-  color: white;
-  font-size: 1.1em;
-}
-
-.card12 .buy {
-  width: 80%;
-  height: 80px;
-  margin: 8px;
-  /* background: red; */
-}
-
 .card12 .buy button {
   padding: 12px 24px;
   background: rgb(189, 188, 188);
@@ -358,6 +390,12 @@
   border: 2px solid white;
   border-radius: 24px;
   cursor: pointer;
+}
+
+.card12 button:hover {
+  transform: scale(1.1);
+  background: rgb(128, 115, 115);
+  box-shadow: 2px 4px 2px rgb(5, 1, 1);
 }
 
 .card12 a {
@@ -466,6 +504,21 @@
   outline: none;
   border: 2px solid white;
   width: 30%;
+  cursor: pointer;
+}
+
+.card17 button:hover {
+  transform: scale(1.1);
+  background: rgb(128, 115, 115);
+  box-shadow: 2px 4px 2px rgb(5, 1, 1);
+}
+
+.card17 button a {
+  text-decoration: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2em;
 }
 
 .card15 {
@@ -502,6 +555,10 @@
   .card1 a {
     font-size: 0.8em;
   }
+
+  .card12 .buy {
+    margin-left: 25px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 895px) {
@@ -514,6 +571,10 @@
 
   .card1 a {
     font-size: 0.7em;
+  }
+
+  .card12 .buy {
+    margin-left: 35px;
   }
 
   .card2 i {

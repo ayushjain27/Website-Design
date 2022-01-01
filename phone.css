@@ -1,0 +1,320 @@
+/* home */
+
+.navbar {
+  width: 96.5%;
+}
+
+.card1 {
+  padding: 5px;
+  padding-left: 0px;
+  font-size: 0.6rem;
+  padding-top: 20px;
+  width: 55%;
+}
+
+.card1 a {
+  padding: 12px 10px;
+}
+
+.card2 i {
+  padding: 12px 10px;
+  font-size: 1em;
+  margin-left: -5px;
+}
+
+.card2 p {
+  margin: 0px;
+  /* margin-left: -35px; */
+}
+
+/* services */
+
+.service-container {
+  height: 1100px;
+}
+
+.card5 {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: -100px;
+}
+
+.content h1 {
+  color: red;
+  font-size: 2em;
+  display: block;
+  text-align: center;
+  margin-bottom: 4px;
+}
+.content p {
+  font-size: 1.2em;
+  display: block;
+  text-align: center;
+  padding: 10px 20px;
+  padding-bottom: 12px;
+}
+
+.card6 {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  top: -250px;
+}
+
+.box1 {
+  width: 100%;
+  height: 200px;
+  margin: 8px 0px;
+}
+
+.box1 p {
+  font-size: 1.2em;
+}
+
+/* blog */
+
+.blog-container {
+  width: 100%;
+  height: 600px;
+}
+
+.card8 {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+
+.card10 h1 {
+  left: 0px;
+}
+
+.card11 {
+  width: 100%;
+  height: 250px;
+}
+
+.card12 {
+  width: 100%;
+  height: 250px;
+}
+
+.card12 p {
+  font-size: 1em;
+  padding: 5px 34px;
+  color: white;
+}
+
+.card12 .buy {
+  width: 100%;
+  height: 60px;
+  margin: 6px;
+  margin-left: 55px;
+}
+
+/* contact */
+
+.contact-container {
+  width: 100%;
+  height: 540px;
+}
+
+.card14 {
+  width: 100%;
+  height: 420px;
+  /* background: lightslategray; */
+  display: flex;
+}
+
+.card14 {
+  display: flex;
+  flex-direction: column;
+}
+
+.card16 {
+  display: block;
+  width: 100%;
+  height: 220px;
+  /* background: lightskyblue; */
+}
+
+.card18 {
+  width: 100%;
+  height: 150px;
+  /* background: lightslategray; */
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+  padding-left: 48px;
+}
+
+.card18 p {
+  font-size: 1rem;
+}
+
+.card18 a {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card17 {
+  width: 100%;
+  height: 300px;
+  /* background: lightsalmon; */
+  display: flex;
+  flex-direction: column;
+}
+
+.card17 .div {
+  margin: 5px;
+}
+
+.card17 button {
+  padding: 8px 12px;
+  background: rgb(177, 175, 175);
+  outline: none;
+  display: block;
+  border: 2px solid white;
+  width: 30%;
+  margin: auto;
+  cursor: pointer;
+}
+
+.card17 input {
+  padding: 12px;
+  display: block;
+  width: 50%;
+  margin: auto;
+  outline: none;
+  border: none;
+  background: rgb(177, 175, 175);
+}
+
+.card17 textarea {
+  padding: 12px;
+  background: rgb(177, 175, 175);
+  display: block;
+  width: 50%;
+  margin: auto;
+  outline: none;
+  border: none;
+}
+
+@media screen and (max-width: 320px) {
+  .card6 {
+    position: relative;
+    top: -180px;
+  }
+
+  .content {
+    position: relative;
+    top: -10px;
+  }
+
+  .box1 {
+    margin: 0px;
+  }
+
+  .box1 p {
+    font-size: 1em;
+    padding: 1px 32px;
+  }
+}
+
+@media screen and (max-width: 554px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    width: 95.5%;
+  }
+
+  .navbar .card1 {
+    width: 100%;
+  }
+
+  .card1 {
+    padding: 15px;
+    padding-left: 50px;
+  }
+
+  .card1 a {
+    font-size: 1.5em;
+    /* margin: 3px; */
+  }
+
+  .card2 {
+    display: none;
+  }
+
+  .card3 {
+    width: 60%;
+  }
+
+  .content p {
+    font-size: 1em;
+  }
+
+  .card3 p {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 419px) {
+  .card1 {
+    padding-left: 30px;
+  }
+  .content p {
+    font-size: 0.9em;
+  }
+
+  .card3 p {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .card3 {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card1 {
+    padding-left: 10px;
+  }
+  .card1 a{
+    padding: 12px 10px;
+  }
+  .card3 p {
+    font-size: 0.5em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* .navbar {
+    width: 94%;
+  } */
+  .card1 a {
+    font-size: 1.2em;
+  }
+  .card3 p {
+    font-size: 1em;
+  }
+
+  .card3 h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 573px) {
+  .navbar {
+    width: 96%;
+  }
+  .card1 a {
+    padding: 12px 8px;
+  }
+}
